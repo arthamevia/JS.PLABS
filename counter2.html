@@ -7,7 +7,12 @@
     <title>Counter 2</title>
     <script>
         function hello () {
-            document.querySelector('h1').innerHTML = 'Goodbye!';
+            const heading = document.querySelector('h1');
+            if (heading.innerHTML === 'Hello!'){
+                heading.innerHTML = 'Goodbye!';
+            } else {
+                heading.innerHTML = 'Hello!';
+            }
         }
     </script>
 </head>
