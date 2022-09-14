@@ -7,18 +7,30 @@
     <title>Colors</title>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-           document.querySelectorAll('button').forEach(button => {
-            button.onclick = function() {
-                document.querySelector('#yuli').style.color = button.dataset.color;
+            document.querySelector('select').onchange = function() {
+                document.querySelector('#yuli').style.color = this.value;
             }
-           });
+
+        //    document.querySelectorAll('button').forEach(button => {
+        //     button.onclick = function() {
+        //         document.querySelector('#yuli').style.color = button.dataset.color;
+        //     }
+        //    });
         });
     </script>
 </head>
 <body>
     <h1 id="yuli">Hi Yulii</h1>
-    <button data-color="red">Red</button>
+    <select>
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="pink">Pink</option>
+    </select>
+    <!-- <button data-color="red">Red</button>
     <button data-color="blue">Blue</button>
-    <button data-color="green">Green</button>
+    <button data-color="green">Green</button> -->
 </body>
 </html>
