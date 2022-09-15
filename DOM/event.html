@@ -7,7 +7,22 @@
     <title>Dom Event</title>
 </head>
 <body>
-    <h2>JavaScript HTML Events</h2>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+    style="background-color:#1f45f1;width:130px;height:60px;padding:90px;">
+    Mouse Over Me</div>
+
+    <script>
+    function mOver(obj) {
+    obj.innerHTML = "Hi, Bertemu lagi dengan saya Yuliyanti Arthamevia"
+    }
+
+    function mOut(obj) {
+    obj.innerHTML = "Mouse Over Me"
+    }
+</script>
+
+    <!-- <h2>JavaScript HTML Events</h2>
     <p>Click the button to display the date.</p>
 
     <button onclick="displayDate()">The time is?</button>
@@ -19,6 +34,6 @@
     </script>
 
     <p id="artha"></p>
-    <h3 id="artha"></h3>
+    <h3 id="artha"></h3> -->
 </body>
 </html>
