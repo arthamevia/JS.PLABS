@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Function Prototype</title>
+<style>
+   body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   }
+   .result {
+      font-size: 20px;
+      font-weight: 500;
+      color: blueviolet;
+   }
+   button{
+    background-color: blue;
+    color: aqua;
+   }
+</style>
+</head>
+<body>
+<h1>Function prototypes in JavaScript</h1>
+<div class="result"></div>
+<br />
+<button class="Btn">Click Here</button>
+<h3>Click on the above button to call the welcome method of person1 and person2 object</h3>
+<script>
+   let resEle = document.querySelector(".result");
+   let BtnEle = document.querySelector(".Btn");
+   function personConstructor(fName, lName) {
+      this.fName = fName;
+      this.lName = lName;
+   }
+   personConstructor.prototype.welcome = function () {
+      return "Welcome " + this.fName + " " + this.lName;
+   };
+   let person1 = new personConstructor("Rohan", "Sharma");
+   let person2 = new personConstructor("Shawn", "Smith");
+   BtnEle.addEventListener("click", () => {
+      resEle.innerHTML = "person1.welcome() = " + person1.welcome() + "<br>";
+      resEle.innerHTML += "person2.welcome() = " + person2.welcome() + "<br>";
+   });
+</script>
+</body>
+</html>
