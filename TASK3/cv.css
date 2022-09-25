@@ -75,27 +75,10 @@ body {
     padding-right: 18px;
     }
     
-    img{
-        width: 265px;
-        
+    img {
+      width: 230px;  
     }
-    
-    /* container-padding {
-        box-shadow: 0 0 10px;
-        width: 50%;
-        height: 588.2px;
-        background-color: rgb(255, 255, 255);
-        box-sizing: border-box;
-        color: rgb(0, 0, 0);
-        font-family: "Roboto", sans-serif;
-        font-size: 15px;
-        line-height: 22.5px;
-        margin-left: 70% 23%;
-        padding-bottom: 0.15px;
-        padding-left: 16px;
-        padding-top: 0.15px;
-        } */
-        
+  
         .padding {
             text-align: left;
             margin: 30px auto;
@@ -125,32 +108,42 @@ body {
             box-sizing: border-box;
             color: rgb(0, 0, 0);
             font-family: "Roboto", sans-serif;
-            font-size: 12px;
+            font-size: 12px; 
             line-height: 18px;
             color:  #ffff !important;
             text-align: center;
             }
-            .content1{
-                padding: 14px;
-            }
-            /* .progress4 {
-                background-color: #009688 !important;
-                border-bottom-left-radius: 16px;
-                border-bottom-right-radius: 16px;
-                border-top-left-radius: 16px;
-                border-top-right-radius: 16px;
-                color: #fff !important;
-                text-align: center;
-                line-height: 18px;
-                font-size: 12px;
-            } */
 
-            /* Card skill */
+            .content1, .content2 {
+              padding: 0 30px;
+            }
+
+            .content1 div {
+              border: #858585 1px solid;
+              padding: 20px;
+              margin-top: 10px;
+              border-radius: 5px;
+            }
+
+            .content2 div {
+              border: #858585 1px solid;
+              padding: 20px;
+              margin-top: 10px;
+              border-radius: 10px;
+            }
+
+            .skills {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              margin-top: 50px;
+            }
+
             .a-box {
-                display: inline-block;
-                width: 300px;
-                text-align: center;
-                margin: 80px auto;
+                /* display: inline-block; */
+              width: 300px;
+              text-align: center;
+              margin: 80px auto;
                 
             }
 
@@ -161,8 +154,6 @@ body {
                 border-radius: 0px 0px 20px 20px;
                 display: inline-block;
                 box-shadow: #7f95ee;
-                
-                
             }
 
             .img-container1 img {
@@ -180,6 +171,7 @@ body {
                 font-size: 0px;
                 margin: 30px 0px 0px 0px;
                 background: #7ba4e2;
+
                 height: 250px;
                 width: 250px;
             }
@@ -209,26 +201,17 @@ body {
                     font-family: 'Open Sans', sans-serif;
                     position: relative;
                   }
-                  
-                  /* Typography =======================*/
-                  
-                  /* Headings */
-                  
-                  /* Main heading for card's front cover */
+
                   .card-front__heading {
                     font-size: 1.5rem;
                     margin-top: .25rem;
                   }
-                  
-                  /* Main heading for inside page */
+
                   .inside-page__heading { 
                     padding-bottom: 1rem; 
                     width: 100%;
                   }
-                  
-                  /* Mixed */
-                  
-                  /* For both inside page's main heading and 'view me' text on card front cover */
+
                   .inside-page__heading,
                   .card-front__text-view {
                     font-size: 1.3rem;
@@ -247,25 +230,18 @@ body {
                   
                   .inside-page__heading--camping,
                   .card-front__text-view--camping { color: #00b97c; }
-                  
-                  /* Front cover */
+                 
                   
                   .card-front__tp { color: #fafbfa; }
-                  
-                  /* For pricing text on card front cover */
+                 
                   .card-front__text-price {
                     font-size: 1.2rem;
                     margin-top: -.2rem;
                   }
-                  
-                  /* Back cover */
-                  
-                  /* For inside page's body text */
+
                   .inside-page__text {
                     color: #333;
                   }
-                  
-                  /* Icons ===========================================*/
                   
                   .card-front__icon {
                     fill: #fafbfa;
@@ -274,9 +250,7 @@ body {
                     margin-top: -.5rem;
                     width: 3.25rem;
                   }
-                  
-                  /* Buttons =================================================*/
-                  
+
                   .inside-page__btn {
                     background-color: transparent;
                     border: 3px solid;
@@ -348,9 +322,7 @@ body {
                   .inside-page__btn:hover::before { 
                     transform: scaleY(1);
                   }
-                  
-                  /* Layout Structure=========================================*/
-                  
+
                   .main {
                     background: linear-gradient(
                       to bottom right,
@@ -365,8 +337,7 @@ body {
                     resize: both;
                     overflow: auto;
                   }
-                  
-                  /* Container to hold all cards in one place */
+
                   .card-area {
                     align-items: center;
                     display: flex;
@@ -375,10 +346,7 @@ body {
                     justify-content: space-evenly;
                     padding: 1rem;
                   }
-                  
-                  /* Card ============================================*/
-                  
-                  /* Area to hold an individual card */
+              
                   .card-section {
                     align-items: center;
                     display: flex;
@@ -397,9 +365,6 @@ body {
                     width: 15rem;
                   }
                   
-                  /* Flip card - covering both the front and inside front page */
-                  
-                  /* An outer container to hold the flip card. This excludes the inside page */
                   .flip-card {
                     height: 15rem;
                     perspective: 100rem;
@@ -410,14 +375,11 @@ body {
                     width: 15rem;
                     z-index: 100;
                   }
-                  
-                  /* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
-                  /* This is done so content in the inside page can be selected */
+
                   .flip-card > * {
                     visibility: visible;
                   }
-                  
-                  /* An inner container to hold the flip card. This excludes the inside page */
+
                   .flip-card__container {
                     height: 100%;
                     position: absolute;
@@ -437,10 +399,7 @@ body {
                     top: 0;
                     width: 100%;
                   }
-                  
-                  /* Styling for the front side of the flip card */
-                  
-                  /* container for the front side */
+
                   .card-front {
                     background-color: #fafbfa;
                     height: 15rem;
@@ -490,14 +449,11 @@ body {
                     );
                   }
                   
-                  /* Front card's bottom section */
                   .card-front__bt {
                     align-items: center;
                     display: flex;
                     justify-content: center;
                   }
-                  
-                  /* Styling for the back side of the flip card */
                   
                   .card-back {
                     background-color: #fafbfb;
@@ -536,21 +492,21 @@ body {
                     width: 100%;
                   }
                   
-                  /* Functionality ====================================*/
                   
-                  /* This is to keep the card centered (within its container) when opened */
+                  
+                  /* card  */
                   .card:hover {
                     box-shadow:
                     -.1rem 1.7rem 6.6rem -3.2rem rgba(238, 158, 158, 0.75);
                     width: 30rem;
                   }
                   
-                  /* When the card is hovered, the flip card container will rotate */
+                  /* card */
                   .card:hover .flip-card__container {
                     transform: rotateY(-180deg);
                   }
                   
-                  /* When the card is hovered, the shadow on the inside page will shrink to the left */
+                  /* card */
                   .card:hover .inside-page {
                     box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
                   }
