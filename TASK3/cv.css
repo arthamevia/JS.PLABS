@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -81,6 +82,12 @@ body {
     padding: 0 8px;
     padding-right: 18px;
     }
+
+    a:link {
+      text-decoration: none;
+      color: #26272b;
+    }
+    .bold { font-weight: bold; }
     
     img {
       width: 230px;  
@@ -332,6 +339,7 @@ body {
                   }
 
                   .main {
+                    text-align: center;
                     background: linear-gradient(
                       to bottom right,
                       #eee8dd,
@@ -340,12 +348,11 @@ body {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    height: 100vh;
+                    height: 70vh;
                     width: 100%;
                     resize: both;
                     overflow: auto;
                   }
-
                   .card-area {
                     align-items: center;
                     display: flex;
@@ -721,3 +728,5 @@ body {
  .social-icons a.dribbble:hover {  
   background-color: #ea4c89;  
  }  
+
+ 
