@@ -92,8 +92,14 @@ body {
       text-decoration: none;
       color: black;
     }
-    .bold { font-weight: bold; }
-    
+    .bold { 
+      font-weight: bold; 
+    }
+
+    .bold1 {
+      font-weight: bold;
+    }
+
     img {
       width: 230px;  
     }
