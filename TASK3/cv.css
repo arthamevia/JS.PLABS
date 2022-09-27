@@ -9,7 +9,7 @@ html {
     padding: 0px;
 }
 body {
-    font-size: 14px;
+    font-size: 16px;
     font-family: verdana;
     background-color: #9fdef7;
 }
@@ -615,7 +615,7 @@ body {
   background-color: #26272b;  
   padding: 50px 0 20px;  
   margin-top: 600px;
-  font-size: 15px;  
+  font-size: 18px;  
   line-height: 24px;  
   text-align: center;
   color: #737373;  
