@@ -229,9 +229,14 @@ body {
                 font-size: 18px;
                 }
 
+                .formdate {
+                  background-color: #B1E1FF;
+                  color: black;
+                }
+
                 main h2 {
-                    margin: 50px;
-                    font-size: 30px;
+                    margin: 60px;
+                    font-size: 25px;
                 }
                 body {
                     box-sizing: border-box;
@@ -276,6 +281,7 @@ body {
 
                   .inside-page__text {
                     color: #333;
+                    margin-top: -1px;
                     
                   }
                   
@@ -293,7 +299,7 @@ body {
                     border-radius: .5rem;
                     font-size: 1.2rem;
                     font-weight: 600;
-                    margin-top: 2rem;
+                    margin-top: 0;
                     overflow: hidden;
                     padding: .7rem .75rem;
                     position: relative;
@@ -319,7 +325,7 @@ body {
                   .inside-page__btn--city { 
                     border-color: #ff40a1;
                     color: #ff40a1;
-                    margin-top: auto;
+                    margin-top: 5px auto;
                     margin-right: auto;
                     
                   }
@@ -468,18 +474,11 @@ body {
                   }
                   
                   .card-front__tp--beach {
+
                     background: linear-gradient(
                       to bottom,
                       #fb9b88,
                       #f86647
-                    );
-                  }
-                  
-                  .card-front__tp--camping {
-                    background: linear-gradient(
-                      to bottom,
-                      #00db93,
-                      #00b97d
                     );
                   }
                   
@@ -493,16 +492,6 @@ body {
                     background-color: #fafbfb;
                     transform: rotateY(180deg);
                   }
-                  
-                  /* Specifically targeting the <video> element */
-                  .video__container {
-                    clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
-                    height: auto;
-                    min-height: 100%;
-                    object-fit: cover;
-                    width: 100%;
-                  }
-                  
                   /* Inside page */
                   
                   .inside-page {
@@ -747,9 +736,21 @@ body {
  }  
 
 
- @media (max-width: 180px) {
+ @media (max-width: 1080px) {
   #heading{
-  width: 1000px;
+  width: 180px;
  }
+ #heading a{
+  font-size: 30px;
+ }
+}
+
+@media (max-width: 600px) {
+  #heading{
+    width: 150px;
+  }
+#heading a{
+  font-size: 25px;
+  }
 }
 

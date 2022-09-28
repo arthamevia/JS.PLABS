@@ -1,6 +1,6 @@
 
             // sisa Durasi magang
-            let start = document.getElementById('start').innerHTML = 'september 07 2022';
+            let start = document.getElementById('start').innerHTML = 'September 07 2022';
             let end = document.getElementById('end').innerHTML = 'Sekarang';
 
             let month_start = new Date(start).getMonth();
@@ -13,4 +13,4 @@
 
             let day = day_end - day_start;
 
-            document.getElementById('duration').innerHTML = `Durasi : ${month} month ${day} day `;
+            document.getElementById('duration').innerHTML = `Durasi : ${month} Month ${day} Day `;
